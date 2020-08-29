@@ -10,11 +10,48 @@
 
   <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
+  <link rel="stylesheet" href="{{ asset('base/pe-icon/css/pe-icon-7-stroke.css') }}">
+  <link rel="stylesheet" href="{{ asset('base/pe-icon/css/helper.css') }}">
+
   <title>@yield('title', __('Blog'))</title>
 </head>
 <body>
   <div id="app" class="container-fluid">
-    @yield('content')
+    <div class="row">
+      {{-- BEGIN SIDEBAR --}}
+      <div class="col sidebar pl-4 pr-4">
+        <nav>
+          <ul class="vertical-nav-menu">
+            <li class="upper-case sidebar-head">menu</li>
+            <li class="capitalize">
+              <a href="#">
+                <i class="metismenu-icon pe-7s-rocket"></i>
+                menu
+                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+              </a>
+            </li>
+            <li class="capitalize"><a href="#">menu</a></li>
+            <li class="capitalize"><a href="#">menu</a></li>
+            <li class="capitalize"><a href="#">menu</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      {{-- BEGIN MAIN --}}
+      <div class="col">
+        {{-- BEGIN HEADER --}}
+        <div class="row">
+          <div class="col header text-center">
+            ADMIN PANEL
+          </div>
+        </div>
+
+        {{-- BEGIN CONTENT --}}
+        <div class="main">
+          @yield('content')
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="{{ asset(mix('admin/js/app.js')) }}"></script>

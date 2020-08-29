@@ -1,0 +1,22 @@
+@import 'variables';
+
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        width: $sidebar-small-width;
+    }
+
+    .main {
+        padding-left: $sidebar-small-width;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar {
+        width: 0;
+        display: none;
+    }
+
+    .main {
+        padding-left: 0;
+    }
+}
