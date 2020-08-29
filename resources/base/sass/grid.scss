@@ -1,0 +1,35 @@
+@import './mixins/border-box';
+@import 'variables';
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  @include border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $container-max-width;
+  &-fluid {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+.container,
+.container-fluid {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .col {
+      flex-basis: 0;
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+  }
+}

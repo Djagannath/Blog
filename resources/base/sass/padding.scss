@@ -1,0 +1,7 @@
+@import 'variables';
+
+@each $key, $value in $map-side {
+  .p#{$key}-4 {
+    padding#{$value}: 1.5rem !important;
+  }
+}
