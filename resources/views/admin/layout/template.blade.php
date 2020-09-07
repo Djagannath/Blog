@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="{{ asset('base/pe-icon/css/pe-icon-7-stroke.css') }}">
   <link rel="stylesheet" href="{{ asset('base/pe-icon/css/helper.css') }}">
+  <link href="{{ asset(mix('admin/css/app.css')) }}" rel="stylesheet" type="text/css">
 
   <title>@yield('title', __('Blog'))</title>
 </head>
@@ -24,13 +25,19 @@
           <ul class="vertical-nav-menu">
             <li class="upper-case sidebar-head">menu</li>
             <li class="capitalize">
-              <a href="#">
-                <i class="metismenu-icon pe-7s-rocket"></i>
-                menu
-                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-              </a>
+              <a href="#"><i class="metismenu-icon pe-7s-rocket"></i>menu<i class="metismenu-state-icon pe-7s-angle-down caret-left"></i></a>
+                <ul>
+                    <li><a href="" class="">Sub menu</a></li>
+                    <li><a href="" class="">Sub menu</a></li>
+                    <li><a href="" class="">Sub menu</a></li>
+                    <li><a href="" class="">Sub menu</a></li>
+                    <li><a href="" class="">Sub menu</a></li>
+                    <li><a href="" class="">Sub menu</a></li>
+                </ul>
             </li>
-            <li class="capitalize"><a href="#">menu</a></li>
+            <li class="capitalize">
+                <a href="#">menu</a>
+            </li>
             <li class="capitalize"><a href="#">menu</a></li>
             <li class="capitalize"><a href="#">menu</a></li>
           </ul>
@@ -43,6 +50,8 @@
         <div class="row">
           <div class="col header text-center">
             ADMIN PANEL
+
+            <nav-menu></nav-menu>
           </div>
         </div>
 
@@ -55,6 +64,5 @@
   </div>
 
   <script src="{{ asset(mix('admin/js/app.js')) }}"></script>
-  <link href="{{ asset(mix('admin/css/app.css')) }}" rel="stylesheet" type="text/css">
 </body>
 </html>

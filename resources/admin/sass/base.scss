@@ -116,3 +116,30 @@ a {
   left: auto;
   right: 0;
 }
+
+.vertical-nav-menu ul {
+    position: relative;
+    list-style: none;
+    transition: padding 300ms;
+    padding: .5em 0 0 2rem;
+}
+
+.vertical-nav-menu ul:before {
+    content: '';
+    height: 100%;
+    opacity: 1;
+    width: 3px;
+    background: $nav-menu-vertical-line;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    border-radius: 15px;
+}
+
+.vertical-nav-menu ul>li>a {
+    color: $nav-submenu-link;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 1.5rem 0;
+}
+

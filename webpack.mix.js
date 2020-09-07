@@ -9,5 +9,5 @@ if (mix.inProduction()) {
 }
 
 if (!mix.inProduction()) {
-  mix.browserSync('127.0.0.1');
+  mix.browserSync('127.0.0.1:8081');
 }

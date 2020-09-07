@@ -1,14 +1,26 @@
-window._ = require('lodash');
+// window._ = require('lodash');
 
-window.axios = require('axios');
+// window.axios = require('axios');
 
 window.Vue = require('vue');
+// import VueRouter from 'vue-router';
+// import routes from './routes';
+// window.Vue.use(VueRouter);
 
+// const router = new VueRouter({ routes })
+
+/**
+ * adding components to this application
+ */
+
+Vue.component('nav-menu', require('./../components/nav-menu').default);
+
+// const app = new Vue({ router }).$mount('#app')
 const app = new Vue({
-    el: '#app'
+  el: '#app'
 });
 
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+// window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

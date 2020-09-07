@@ -110,6 +110,32 @@ a {
   right: 0;
 }
 
+.vertical-nav-menu ul {
+  position: relative;
+  list-style: none;
+  transition: padding 300ms;
+  padding: 0.5em 0 0 2rem;
+}
+
+.vertical-nav-menu ul:before {
+  content: "";
+  height: 100%;
+  opacity: 1;
+  width: 3px;
+  background: #3f6ad8;
+  position: absolute;
+  left: 20px;
+  top: 0;
+  border-radius: 15px;
+}
+
+.vertical-nav-menu ul > li > a {
+  color: #6c757d;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0 1.5rem 0;
+}
+
 @media screen and (max-width: 1200px) {
   .sidebar {
     width: 80px;
