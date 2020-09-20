@@ -21,27 +21,7 @@
     <div class="row">
       {{-- BEGIN SIDEBAR --}}
       <div class="col sidebar pl-4 pr-4">
-        <nav>
-          <ul class="vertical-nav-menu">
-            <li class="upper-case sidebar-head">menu</li>
-            <li class="capitalize">
-              <a href="#"><i class="metismenu-icon pe-7s-rocket"></i>menu<i class="metismenu-state-icon pe-7s-angle-down caret-left"></i></a>
-                <ul>
-                    <li><a href="" class="">Sub menu</a></li>
-                    <li><a href="" class="">Sub menu</a></li>
-                    <li><a href="" class="">Sub menu</a></li>
-                    <li><a href="" class="">Sub menu</a></li>
-                    <li><a href="" class="">Sub menu</a></li>
-                    <li><a href="" class="">Sub menu</a></li>
-                </ul>
-            </li>
-            <li class="capitalize">
-                <a href="#">menu</a>
-            </li>
-            <li class="capitalize"><a href="#">menu</a></li>
-            <li class="capitalize"><a href="#">menu</a></li>
-          </ul>
-        </nav>
+        <nav-menu :node="{{ $menu }}"></nav-menu>
       </div>
 
       {{-- BEGIN MAIN --}}
@@ -50,8 +30,6 @@
         <div class="row">
           <div class="col header text-center">
             ADMIN PANEL
-
-            <nav-menu></nav-menu>
           </div>
         </div>
 

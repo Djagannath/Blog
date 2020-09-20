@@ -20,9 +20,10 @@
         "sass": "^1.15.2",
         "sass-loader": "^8.0.0",
         "vue": "latest",
-        "vue-template-compiler": "^2.6.11"
+        "vue-template-compiler": "^2.6.11",
+        "vue-router": "^3.4.3"
     },
     "dependencies": {
-        "vue-router": "^3.4.3"
+
     }
 }
